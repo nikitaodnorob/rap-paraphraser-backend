@@ -42,7 +42,7 @@ class MyHandler(BaseHTTPRequestHandler):
 
 if __name__ == '__main__':
     server_class = HTTPServer
-    httpd = server_class(('localhost', int(port)), MyHandler)
+    httpd = server_class(('0.0.0.0', int(port)), MyHandler)
     print('Server started in port ' + port)
     try:
         httpd.serve_forever()
