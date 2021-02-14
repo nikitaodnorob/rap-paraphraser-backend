@@ -4,7 +4,7 @@ from urllib.parse import urlparse, parse_qs
 import associate
 import rephrase
 
-port = os.getenv('PORT', 8000)
+port = os.getenv('PORT', '8000')
 
 
 class MyHandler(BaseHTTPRequestHandler):
@@ -42,8 +42,8 @@ class MyHandler(BaseHTTPRequestHandler):
 
 if __name__ == '__main__':
     server_class = HTTPServer
-    httpd = server_class(('localhost', port), MyHandler)
-    print('Server started in port ' + str(port))
+    httpd = server_class(('localhost', int(port)), MyHandler)
+    print('Server started in port ' + port)
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
