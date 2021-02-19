@@ -15,6 +15,8 @@ pymorphy2-dicts==2.4.393442.3710985
 ```
 
 ## Демо
+Бекенд сервиса развернут на Heroku по адресу https://rap-paraphraser-backend.herokuapp.com/
+
 Фронтенд сервиса расположен в отдельном [репозитории](https://github.com/nikitaodnorob/rap-paraphraser), который развернут на Heroku по адресу https://rap-paraphraser.herokuapp.com/
 
 ## Пример работы
